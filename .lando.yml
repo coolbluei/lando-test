@@ -1,0 +1,17 @@
+name: lando-test
+recipe: drupal8
+config:
+  webroot: web
+services:
+  node:
+    type: node:8.9
+    globals:
+      gulp-cli: "latest"
+tooling:
+  node:
+    service: node
+  npm:
+    service: node
+  gulp:
+    service: node
+
